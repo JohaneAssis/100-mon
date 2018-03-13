@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: e8ab1e256590d2847854c04ba0f74d7d
+timeCreated: 1520897403
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blueStats_0
+    21300002: blueStats_1
+    21300004: blueStats_2
+    21300006: blueStats_3
+    21300008: blueStats_4
+    21300010: blueStats_5
+    21300012: blueStats_6
+    21300014: blueStats_7
+    21300016: blueStats_8
+    21300018: blueStats_9
+    21300020: blueStats_10
+    21300022: blueStats_11
+    21300024: blueStats_12
+    21300026: blueStats_13
+    21300028: blueStats_14
+    21300030: blueStats_15
+    21300032: blueStats_16
+    21300034: blueStats_17
+    21300036: blueStats_18
+    21300038: blueStats_19
+    21300040: blueStats_20
+    21300042: blueStats_21
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blueStats_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1893
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1893
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1893
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1893
+        width: 379
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1893
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_5
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1893
+        width: 379
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1273
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1273
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_8
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1273
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1273
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_10
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1273
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_11
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1273
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 653
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_13
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 653
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_14
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 653
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_15
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 653
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_16
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 653
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_17
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 653
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_18
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 35
+        width: 377
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_19
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 35
+        width: 379
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_20
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 35
+        width: 377
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blueStats_21
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 35
+        width: 379
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

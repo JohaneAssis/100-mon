@@ -11,13 +11,12 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public GameObject placeholder = null;
 
-    public enum Slot { HAND, GRAY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
+    public enum Slot { HAND, GREY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
     public Slot typeOfItem = Slot.HAND;
     public List<RaycastResult> raycastResults;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //change size of card to larger size
         Debug.Log("OnBeginDrag");
 
         placeholder = new GameObject();
@@ -66,7 +65,6 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //change size of card to be back to default
         Debug.Log("OnEndDrag");
         this.transform.SetParent(parentToReturnTo);
         this.transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());

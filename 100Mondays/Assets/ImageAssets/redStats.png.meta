@@ -1,27 +1,33 @@
 fileFormatVersion: 2
-guid: fa7d6d67323c74b4ba13dfdb4616983c
-timeCreated: 1520006002
+guid: 23de95f9159934947ad3d6f474aca329
+timeCreated: 1520897695
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: basicUI_0
-    21300002: basicUI_1
-    21300004: basicUI_2
-    21300006: basicUI_3
-    21300008: basicUI_4
-    21300010: basicUI_5
-    21300012: basicUI_6
-    21300014: basicUI_7
-    21300016: basicUI_8
-    21300018: basicUI_9
-    21300020: basicUI_10
-    21300022: basicUI_11
-    21300024: basicUI_12
-    21300026: basicUI_13
-    21300028: basicUI_14
-    21300030: basicUI_15
-    21300032: basicUI_16
-  externalObjects: {}
+    21300000: redStats_0
+    21300002: redStats_1
+    21300004: redStats_2
+    21300006: redStats_3
+    21300008: redStats_4
+    21300010: redStats_5
+    21300012: redStats_6
+    21300014: redStats_7
+    21300016: redStats_8
+    21300018: redStats_9
+    21300020: redStats_10
+    21300022: redStats_11
+    21300024: redStats_12
+    21300026: redStats_13
+    21300028: redStats_14
+    21300030: redStats_15
+    21300032: redStats_16
+    21300034: redStats_17
+    21300036: redStats_18
+    21300038: redStats_19
+    21300040: redStats_20
+    21300042: redStats_21
+    21300044: redStats_22
+    21300046: redStats_23
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -30,8 +36,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -47,13 +51,10 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,267 +76,336 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: basicUI_0
+      name: redStats_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 970
-        width: 562
-        height: 530
+        x: 0
+        y: 1935
+        width: 377
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_1
+      name: redStats_1
       rect:
         serializedVersion: 2
-        x: 598
-        y: 926
-        width: 300
-        height: 574
+        x: 398
+        y: 1935
+        width: 379
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_2
+      name: redStats_2
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1240
-        width: 261
-        height: 260
+        x: 803
+        y: 1935
+        width: 378
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_3
+      name: redStats_3
       rect:
         serializedVersion: 2
-        x: 1236
-        y: 1240
-        width: 261
-        height: 260
+        x: 1203
+        y: 1935
+        width: 378
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_4
+      name: redStats_4
       rect:
         serializedVersion: 2
-        x: 932
-        y: 923
-        width: 261
-        height: 261
+        x: 1603
+        y: 1935
+        width: 378
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_5
+      name: redStats_5
       rect:
         serializedVersion: 2
-        x: 1213
-        y: 994
-        width: 284
-        height: 226
+        x: 2002
+        y: 1935
+        width: 377
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_6
+      name: redStats_6
       rect:
         serializedVersion: 2
-        x: 22
-        y: 414
-        width: 886
-        height: 486
+        x: 0
+        y: 1314
+        width: 377
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_7
+      name: redStats_7
       rect:
         serializedVersion: 2
-        x: 933
-        y: 645
-        width: 261
-        height: 261
+        x: 398
+        y: 1314
+        width: 379
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_8
+      name: redStats_8
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 741
-        width: 284
-        height: 226
+        x: 803
+        y: 1314
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_9
+      name: redStats_9
       rect:
         serializedVersion: 2
-        x: 933
-        y: 365
-        width: 261
-        height: 261
+        x: 1203
+        y: 1314
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_10
+      name: redStats_10
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 496
-        width: 284
-        height: 226
+        x: 1603
+        y: 1314
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_11
+      name: redStats_11
       rect:
         serializedVersion: 2
-        x: 5
-        y: 87
-        width: 892
-        height: 312
+        x: 2002
+        y: 1314
+        width: 377
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_12
+      name: redStats_12
       rect:
         serializedVersion: 2
-        x: 933
-        y: 86
-        width: 261
-        height: 261
+        x: 0
+        y: 694
+        width: 377
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_13
+      name: redStats_13
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 246
-        width: 284
-        height: 226
+        x: 398
+        y: 694
+        width: 379
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_14
+      name: redStats_14
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
-        width: 1034
-        height: 66
+        x: 803
+        y: 694
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_15
+      name: redStats_15
       rect:
         serializedVersion: 2
-        x: 1091
-        y: 12
-        width: 67
-        height: 37
+        x: 1203
+        y: 694
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: basicUI_16
+      name: redStats_16
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 0
-        width: 284
-        height: 225
+        x: 1603
+        y: 694
+        width: 378
+        height: 603
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_17
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 694
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_19
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 79
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_20
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_21
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_22
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_23
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 79
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
       tessellationDetail: 0
     outline: []
-    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
