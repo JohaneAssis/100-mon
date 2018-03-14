@@ -19,7 +19,7 @@ public class debugCard : MonoBehaviour
     void OnGUI()
     {
 
-        if (GUI.Button(new Rect(10, 10, 100, 28), "Test"))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if(cardIndex >= cardProp.faces.Length)
             {

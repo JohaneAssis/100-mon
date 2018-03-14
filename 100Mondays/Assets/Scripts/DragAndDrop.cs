@@ -4,16 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
+public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+{
+    public Transform parentToReturnTo;
+    public Transform placeholderParent;
 
-    public Transform parentToReturnTo = null;
-    public Transform placeholderParent = null;
-
-    public GameObject placeholder = null;
+    public GameObject placeholder;
+    public GameObject copyCard;
+    GameObject copyCardPrefab;
 
     public enum Slot { HAND, GREY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
     public Slot typeOfItem = Slot.HAND;
-    public List<RaycastResult> raycastResults;
+    //public List<RaycastResult> raycastResults;
+
+    public GameObject card;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -36,9 +40,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         this.transform.SetParent(this.transform.parent.parent);
         GetComponent<CanvasGroup>().blocksRaycasts = false;
 
+        Instantiate(card);
         // might loop through each of the zones while beinging to Drag to make a glow 
         //that will show where the card are valid to play
-        DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
+        //DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
 	}
 
     public void OnDrag(PointerEventData eventData)
@@ -71,12 +76,18 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         GetComponent<CanvasGroup>().blocksRaycasts = true;
 
         this.transform.localScale = this.transform.localScale / 1.3f;
-
+        
         Destroy(placeholder);
+
+        card = GameObject.FindWithTag("greyCard");
+        if (typeOfItem == DragAndDrop.Slot.DISCARD)
+        {
+            Destroy(card);
+        }
 
         //for helping with making the cards disappear when being played in the play area, 
         //targeting the drop box and changing stats
-        EventSystem.current.RaycastAll(eventData, raycastResults);
+        //EventSystem.current.RaycastAll(eventData, raycastResults);
     }
 
 }
