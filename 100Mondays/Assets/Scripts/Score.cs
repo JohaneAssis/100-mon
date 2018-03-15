@@ -683,11 +683,15 @@ public class Score : MonoBehaviour
 
     public void getCombinedValues()
     {
+<<<<<<< HEAD
         tempProfit = (worker * prod * tech * ran1) 
             + (worker * hap * ran2) 
             + (proj * prod * tech * ran3) 
             - (5f * cost * tech * ran4) 
             - (worker * cost * ran5);
+=======
+        tempProfit = worker * prod * tech * ran1 + worker * hap * ran2 + proj * prod * tech * ran3 - 5f * cost * tech * ran4 - worker * cost * ran5;
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 
 	}
 }

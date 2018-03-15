@@ -13,6 +13,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public GameObject copyCard;
     GameObject copyCardPrefab;
 
+<<<<<<< HEAD
     public enum Slot { NONE, HAND, GREY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
     public Slot typeOfItem = Slot.HAND;
     //public List<RaycastResult> raycastResults;
@@ -43,6 +44,17 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
                 cardObj.transform.localScale = Vector3.one;
                 typeOfItem = Slot.HAND;
             }
+=======
+    public enum Slot { HAND, GREY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
+    public Slot typeOfItem = Slot.HAND;
+    //public List<RaycastResult> raycastResults;
+
+    public GameObject card;
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        Debug.Log("OnBeginDrag");
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 
         Debug.Log("created placeholder");
         placeholder = new GameObject();
@@ -64,9 +76,15 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         parentToReturnTo = this.transform.parent;
         placeholderParent = parentToReturnTo;
         this.transform.SetParent(this.transform.parent.parent);
+<<<<<<< HEAD
         Debug.Log("setting the parent that the card returns to for the card beinging moved");
         GetComponent<CanvasGroup>().blocksRaycasts = false;  
         
+=======
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+
+        Instantiate(card);
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
         // might loop through each of the zones while beinging to Drag to make a glow 
         //that will show where the card are valid to play
         //DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
@@ -123,6 +141,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         cardPrefab = GameObject.FindWithTag("greyCard");
 
+<<<<<<< HEAD
         if (typeOfItem == Slot.DISCARD)
         {
             Destroy(cardPrefab);
@@ -130,6 +149,15 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
 
         //might be for helping with making the cards disappear when its being played in the play area, 
+=======
+        card = GameObject.FindWithTag("greyCard");
+        if (typeOfItem == DragAndDrop.Slot.DISCARD)
+        {
+            Destroy(card);
+        }
+
+        //for helping with making the cards disappear when being played in the play area, 
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
         //targeting the drop box and changing stats
         //EventSystem.current.RaycastAll(eventData, raycastResults);
     }

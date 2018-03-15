@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
+=======
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 Shader "UI/Default No-Alpha"
 {
 	Properties
@@ -70,7 +73,11 @@ Shader "UI/Default No-Alpha"
 			v2f vert(appdata_t IN)
 			{
 				v2f OUT;
+<<<<<<< HEAD
 				OUT.vertex = UnityObjectToClipPos(IN.vertex);
+=======
+				OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 				OUT.texcoord = IN.texcoord;
 #ifdef UNITY_HALF_TEXEL_OFFSET
 				OUT.vertex.xy -= (_ScreenParams.zw-1.0);

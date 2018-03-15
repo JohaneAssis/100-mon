@@ -8,6 +8,12 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
     public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.NONE;
     public int discardNum = 0;
 
+<<<<<<< HEAD
+=======
+    public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.HAND;
+    public int discardNum = 0;
+
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log(eventData.pointerDrag.name + " was testing the drop to " + gameObject.name);
@@ -37,7 +43,11 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
     //play a sound or apply the stats of a card or another thing
     public void OnPointerEnter(PointerEventData eventData)
     {
+<<<<<<< HEAD
         //Debug.Log("OnPointEnter");
+=======
+        Debug.Log("OnPointEnter");
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
         if (eventData.pointerDrag == null)
         {
             return;
@@ -56,7 +66,11 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
 
     public void OnPointerExit(PointerEventData eventData)
     {
+<<<<<<< HEAD
        // Debug.Log("OnPointerExit");
+=======
+        Debug.Log("OnPointerExit");
+>>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
         if (eventData.pointerDrag == null)
         {
             return;
