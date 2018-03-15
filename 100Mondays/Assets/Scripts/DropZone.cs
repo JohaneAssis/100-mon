@@ -3,31 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPointerEnterHandler{
+public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPointerEnterHandler
+{
+    public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.NONE;
+    public int discardNum = 0;
 
-    public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.HAND;
-
-	public void OnDrop(PointerEventData eventData)
+    public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log(eventData.pointerDrag.name + "was testing the drop to" + gameObject.name);
+        Debug.Log(eventData.pointerDrag.name + " was testing the drop to " + gameObject.name);
 
         DragAndDrop d = eventData.pointerDrag.GetComponent<DragAndDrop>();
 
-        //for restricting cards going from one place to another
+        //for restricting cards going from one place to another and for the discard pile
         if (d != null)
         {
             if (typeOfItem == d.typeOfItem || typeOfItem == DragAndDrop.Slot.PLAY || typeOfItem == DragAndDrop.Slot.DISCARD)
             {
                 d.parentToReturnTo = this.transform;
+                if (typeOfItem == DragAndDrop.Slot.DISCARD)
+                {                 
+                    discardNum++;
+                    foreach (Transform child in transform)
+                    {
+                        Destroy(child.gameObject);
+                        child.gameObject.SetActive(false);
+                    }
+                }
             }
         }
     }
 
-    //for OnPointerEnter and/or OnPointExit you might add the animations to trigger or 
+    //for OnPointerEnter and/or OnPointExit might be a place to add the animations to trigger or 
     //play a sound or apply the stats of a card or another thing
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Debug.Log("OnPointEnter");
+        //Debug.Log("OnPointEnter");
         if (eventData.pointerDrag == null)
         {
             return;
@@ -46,7 +56,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        // Debug.Log("OnPointerExit");
+       // Debug.Log("OnPointerExit");
         if (eventData.pointerDrag == null)
         {
             return;

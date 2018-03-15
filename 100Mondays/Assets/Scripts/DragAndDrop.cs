@@ -4,42 +4,72 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
+public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+{
+    public Transform parentToReturnTo;
+    public Transform placeholderParent;
 
-    public Transform parentToReturnTo = null;
-    public Transform placeholderParent = null;
+    public GameObject placeholder;
+    public GameObject copyCard;
+    GameObject copyCardPrefab;
 
-    public GameObject placeholder = null;
-
-    public enum Slot { HAND, GRAY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
+    public enum Slot { NONE, HAND, GREY, RED, BLUE, PROJ, WORLD, DISCARD, PLAY };
     public Slot typeOfItem = Slot.HAND;
-    public List<RaycastResult> raycastResults;
+    //public List<RaycastResult> raycastResults;
+    public GameObject cardPrefab;
+    public int discardVal;
+    private DropZone dropZone;
+
+    public void Start()
+    {
+        dropZone = transform.parent.GetComponent<DropZone>();
+    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //change size of card to larger size
-        Debug.Log("OnBeginDrag");
+        discardVal = dropZone.discardNum;
+        DebugCard.Instance.SetCard(gameObject);
+        //Debug.Log("OnBeginDrag");
+        //if type of the card is grey, blue, red, proj, world then create a copy of it
+        if (typeOfItem == Slot.GREY
+            || typeOfItem == Slot.BLUE //&& discardVal >= 2 
+            || typeOfItem == Slot.RED //&& discardVal >= 3
+            || typeOfItem == Slot.PROJ //&& discardVal >= 5
+            || typeOfItem == Slot.WORLD)
+            {
+                GameObject cardObj = Instantiate(cardPrefab);
+                cardObj.transform.SetParent(transform.parent);
+                cardObj.transform.position = transform.position;
+                cardObj.transform.localScale = Vector3.one;
+                typeOfItem = Slot.HAND;
+            }
 
+        Debug.Log("created placeholder");
         placeholder = new GameObject();
         placeholder.transform.SetParent(this.transform.parent);
+        Debug.Log("set parent of placeholder");
+
         LayoutElement le = placeholder.AddComponent<LayoutElement>();
         le.preferredWidth = this.GetComponent<LayoutElement>().preferredWidth;
         le.preferredHeight = this.GetComponent<LayoutElement>().preferredHeight;
         le.flexibleWidth = 0;
         le.flexibleHeight = 0;
+        Debug.Log("set height and width varibales of placeholder");
 
         this.transform.localScale = this.transform.localScale * 1.3f;
 
         placeholder.transform.SetSiblingIndex(this.transform.GetSiblingIndex());
+        Debug.Log("setting the sibiling of placeholder");
 
         parentToReturnTo = this.transform.parent;
         placeholderParent = parentToReturnTo;
         this.transform.SetParent(this.transform.parent.parent);
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
-
+        Debug.Log("setting the parent that the card returns to for the card beinging moved");
+        GetComponent<CanvasGroup>().blocksRaycasts = false;  
+        
         // might loop through each of the zones while beinging to Drag to make a glow 
         //that will show where the card are valid to play
-        DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
+        //DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
 	}
 
     public void OnDrag(PointerEventData eventData)
@@ -62,23 +92,45 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             }
         }
         placeholder.transform.SetSiblingIndex(newSiblingIndex);
+        //Debug.Log("Moved the placeholder");
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //change size of card to be back to default
         Debug.Log("OnEndDrag");
+        
         this.transform.SetParent(parentToReturnTo);
         this.transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+        Debug.Log("set the parent of the card to where the card is placed");
 
         this.transform.localScale = this.transform.localScale / 1.3f;
-
+        
         Destroy(placeholder);
+        Debug.Log("Destroyed the placeholder");
+ 
+        if (typeOfItem == Slot.GREY
+            || typeOfItem == Slot.BLUE
+            || typeOfItem == Slot.RED
+            || typeOfItem == Slot.PROJ
+            || typeOfItem == Slot.WORLD)
+            {
+                Debug.Log(parentToReturnTo.name);
+                DragAndDrop.Slot s = parentToReturnTo.GetComponent<DropZone>().typeOfItem;
+                Debug.Log(s);
+                typeOfItem = s;
+            }
 
-        //for helping with making the cards disappear when being played in the play area, 
+        cardPrefab = GameObject.FindWithTag("greyCard");
+
+        if (typeOfItem == Slot.DISCARD)
+        {
+            Destroy(cardPrefab);
+            Debug.Log("discarded card");
+        }
+
+        //might be for helping with making the cards disappear when its being played in the play area, 
         //targeting the drop box and changing stats
-        EventSystem.current.RaycastAll(eventData, raycastResults);
+        //EventSystem.current.RaycastAll(eventData, raycastResults);
     }
-
 }

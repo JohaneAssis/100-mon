@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 23de95f9159934947ad3d6f474aca329
+timeCreated: 1520897695
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: redStats_0
+    21300002: redStats_1
+    21300004: redStats_2
+    21300006: redStats_3
+    21300008: redStats_4
+    21300010: redStats_5
+    21300012: redStats_6
+    21300014: redStats_7
+    21300016: redStats_8
+    21300018: redStats_9
+    21300020: redStats_10
+    21300022: redStats_11
+    21300024: redStats_12
+    21300026: redStats_13
+    21300028: redStats_14
+    21300030: redStats_15
+    21300032: redStats_16
+    21300034: redStats_17
+    21300036: redStats_18
+    21300038: redStats_19
+    21300040: redStats_20
+    21300042: redStats_21
+    21300044: redStats_22
+    21300046: redStats_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: redStats_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1935
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1935
+        width: 379
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_2
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1935
+        width: 378
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_3
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1935
+        width: 378
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_4
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1935
+        width: 378
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_5
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1935
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1314
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1314
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_8
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1314
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_9
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1314
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_10
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1314
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_11
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 1314
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 694
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_13
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 694
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_14
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 694
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_15
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 694
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_16
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 694
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_17
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 694
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_19
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 79
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_20
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_21
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_22
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 79
+        width: 378
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redStats_23
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 79
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

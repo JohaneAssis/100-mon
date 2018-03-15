@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 32c9b61e883e9af4895f2edca2128089
+timeCreated: 1520897762
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: worldStats_0
+    21300002: worldStats_1
+    21300004: worldStats_2
+    21300006: worldStats_3
+    21300008: worldStats_4
+    21300010: worldStats_5
+    21300012: worldStats_6
+    21300014: worldStats_7
+    21300016: worldStats_8
+    21300018: worldStats_9
+    21300020: worldStats_10
+    21300022: worldStats_11
+    21300024: worldStats_12
+    21300026: worldStats_13
+    21300028: worldStats_14
+    21300030: worldStats_15
+    21300032: worldStats_16
+    21300034: worldStats_17
+    21300036: worldStats_18
+    21300038: worldStats_19
+    21300040: worldStats_20
+    21300042: worldStats_21
+    21300044: worldStats_22
+    21300046: worldStats_23
+    21300048: worldStats_24
+    21300050: worldStats_25
+    21300052: worldStats_26
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: worldStats_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1941
+        width: 377
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_1
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1941
+        width: 379
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1941
+        width: 379
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_3
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1996
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_4
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 2023
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_5
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 1945
+        width: 153
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_6
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 1945
+        width: 153
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1322
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_8
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1322
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_9
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1322
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_10
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1815
+        width: 153
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_11
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 1753
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_12
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1756
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_13
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 1793
+        width: 153
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_14
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1673
+        width: 31
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_15
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1674
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_16
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1676
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_17
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1657
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_18
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1652
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_19
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1649
+        width: 66
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_20
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 1641
+        width: 66
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_22
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 698
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_23
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 698
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 377
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_25
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 79
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: worldStats_26
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 79
+        width: 379
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
