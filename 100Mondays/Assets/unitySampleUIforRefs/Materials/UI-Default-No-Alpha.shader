@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 <<<<<<< HEAD
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
@@ -76,7 +78,7 @@ Shader "UI/Default No-Alpha"
 <<<<<<< HEAD
 				OUT.vertex = UnityObjectToClipPos(IN.vertex);
 =======
-				OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
+				OUT.vertex = UnityObjectToClipPos(IN.vertex);
 >>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 				OUT.texcoord = IN.texcoord;
 #ifdef UNITY_HALF_TEXEL_OFFSET
