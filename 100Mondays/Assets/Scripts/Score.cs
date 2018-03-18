@@ -117,53 +117,42 @@ public class Score : MonoBehaviour
             if (currentChild.gameObject.tag == "greyCard")
             {
                 GetGreyValues();
-                foreach (Transform child in transform)
-                {
-                    Destroy(child.gameObject, 1);
-                }
-                DetermineWeekBlockers();
-                if (greyBlocker.activeSelf)
-                {
-                    Score.greyCountFromDnD = 0;
-                    greyBlocker.SetActive(false);
-                }
+                DeleteUnitAndSetGreyBlocker();
             }
             else if (currentChild.gameObject.tag == "blueCard")
             {
                 GetBlueValues();
-                foreach (Transform child in transform)
-                {
-                    Destroy(child.gameObject, 1);
-                }
-                DetermineWeekBlockers();
+                DeleteUnitAndSetGreyBlocker();
             }
             else if (currentChild.gameObject.tag == "redCard")
             {
                 GetRedValues();
-                foreach (Transform child in transform)
-                {
-                    Destroy(child.gameObject, 1);
-                }
-                DetermineWeekBlockers();
+                DeleteUnitAndSetGreyBlocker();
             }
             else if (currentChild.gameObject.tag == "projCard")
             {
                 GetProjValues();
-                foreach (Transform child in transform)
-                {
-                    Destroy(child.gameObject, 1);
-                }
-                DetermineWeekBlockers();
+                DeleteUnitAndSetGreyBlocker();
             }
             else if (currentChild.gameObject.tag == "worldCard")
             {
                 GetWorldValues();
-                foreach (Transform child in transform)
-                {
-                    Destroy(child.gameObject, 1);
-                }
-                DetermineWeekBlockers();
+                DeleteUnitAndSetGreyBlocker();
             }
+        }
+    }
+
+    public void DeleteUnitAndSetGreyBlocker()
+    {
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject, 1);
+        }
+        DetermineWeekBlockers();
+        if (greyBlocker.activeSelf)
+        {
+            Score.greyCountFromDnD = 0;
+            greyBlocker.SetActive(false);
         }
     }
 
