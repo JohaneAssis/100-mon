@@ -9,7 +9,7 @@ public class HelpButton : MonoBehaviour
     {
         if (GUI.Button(new Rect(10, 10, 100, 28), "Game Help"))
         {
-
+            Debug.Log("help button pressed");
         }
     }
 }

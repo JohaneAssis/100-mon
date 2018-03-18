@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
 using UnityEngine.UI;
 
 //[ExecuteInEditMode]
@@ -13,13 +12,6 @@ public class CardFlip : MonoBehaviour
     CardProperties prop;
     public Sprite endImage;
     //Image image;
-=======
-
-public class CardFlip : MonoBehaviour
-{
-    SpriteRenderer spriteRenderer;
-    CardProperties prop;
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 
     public AnimationCurve scaleCurve;
     public float dur = 0.5f;
@@ -43,17 +35,10 @@ public class CardFlip : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x = scale;
             transform.localScale = localScale;
-<<<<<<< HEAD
             
             if (time >= 0.1f)
             {
                 endImage = spriteRenderer.sprite;
-=======
-
-            if (time >= 0.5f)
-            {
-                spriteRenderer.sprite = endImage;
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
             }
 
             yield return new WaitForFixedUpdate();
@@ -70,7 +55,6 @@ public class CardFlip : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
     /*
     public void FlipFace()
     {
@@ -81,10 +65,6 @@ public class CardFlip : MonoBehaviour
     void Awake()
     {
         //image = GetComponent<Image>();
-=======
-    void Awake()
-    {
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
         spriteRenderer = GetComponent<SpriteRenderer>();
         prop = GetComponent<CardProperties>();
     }

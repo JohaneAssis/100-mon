@@ -9,10 +9,7 @@ TextureImporter:
     21300004: blueFlipSheet_2
     21300006: blueFlipSheet_3
     21300008: blueFlipSheet_4
-<<<<<<< HEAD
   externalObjects: {}
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -21,11 +18,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-<<<<<<< HEAD
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -41,7 +35,6 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-<<<<<<< HEAD
     serializedVersion: 2
     filterMode: -1
     aniso: -1
@@ -49,12 +42,6 @@ TextureImporter:
     wrapU: 1
     wrapV: 1
     wrapW: 1
-=======
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
-    wrapMode: 1
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -76,35 +63,24 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< HEAD
     resizeAlgorithm: 0
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
     androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-=======
-  - buildTarget: Standalone
-    maxTextureSize: 2048
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
     androidETC2FallbackOverride: 0
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,16 +93,10 @@ TextureImporter:
         width: 377
         height: 603
       alignment: 0
-<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-=======
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
       tessellationDetail: 0
     - serializedVersion: 2
       name: blueFlipSheet_1
@@ -140,10 +110,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-<<<<<<< HEAD
       physicsShape: []
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
       tessellationDetail: 0
     - serializedVersion: 2
       name: blueFlipSheet_2
@@ -157,10 +124,7 @@ TextureImporter:
       pivot: {x: 0.36631104, y: 0.4934398}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-<<<<<<< HEAD
       physicsShape: []
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
       tessellationDetail: 0
     - serializedVersion: 2
       name: blueFlipSheet_3
@@ -170,18 +134,11 @@ TextureImporter:
         y: 10
         width: 411
         height: 670
-<<<<<<< HEAD
       alignment: 9
       pivot: {x: 0.32852536, y: 0.49999994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-=======
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
       tessellationDetail: 0
     - serializedVersion: 2
       name: blueFlipSheet_4
@@ -195,15 +152,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-<<<<<<< HEAD
       physicsShape: []
       tessellationDetail: 0
     outline: []
     physicsShape: []
-=======
-      tessellationDetail: 0
-    outline: []
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   spritePackingTag: 
   userData: 
   assetBundleName: 

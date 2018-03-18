@@ -52,10 +52,7 @@ MonoBehaviour:
   m_PreferredHeight: 65
   m_FlexibleWidth: 0
   m_FlexibleHeight: 0
-<<<<<<< HEAD
   m_LayoutPriority: 1
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 --- !u!114 &114448814867827038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,10 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54877118c9029a24a8fc813bb61e9783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   endImage: {fileID: 0}
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   scaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -175,14 +169,10 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   placeholderParent: {fileID: 0}
   placeholder: {fileID: 0}
-<<<<<<< HEAD
   copyCard: {fileID: 0}
   typeOfItem: 2
   cardPrefab: {fileID: 1866750900245374}
   discardVal: 0
-=======
-  typeOfItem: 0
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 --- !u!212 &212442721671701104
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -192,10 +182,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-<<<<<<< HEAD
   m_DynamicOccludee: 1
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -211,34 +198,25 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-<<<<<<< HEAD
   m_StitchLightmapSeams: 0
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-<<<<<<< HEAD
   m_SortingLayer: 0
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5fb0a8d64ec8cb24ca56276ef1d1d822, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
-<<<<<<< HEAD
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-=======
->>>>>>> e95d130ac169ec9216e2d2c44eaffb1b9195a525
 --- !u!222 &222021389374757238
 CanvasRenderer:
   m_ObjectHideFlags: 1
