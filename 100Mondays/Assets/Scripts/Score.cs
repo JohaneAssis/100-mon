@@ -6,6 +6,10 @@ using UnityEngine.UI;
 [System.Serializable]
 //element 0 - 23 grey, element 24 - 45 blue, element 46 - 69 red
 //element 70 - 81 world, element 82 - 90 proj
+
+//didn't end up using this struct but kept it in just in case for future possible implementation,
+//commented out some parts for the struct implementation as well,
+//and kept it because I already put the 91 card with stats in the inspector set up
 public struct CardFace
 {
     public Sprite sprite;
@@ -44,7 +48,8 @@ public class Score : MonoBehaviour
     public int determineWorldNum;
     int worldBlockNum = 9;
     public static int greyCountFromDnD;
-    public GameObject worldBlocker , greyBlocker;
+    public GameObject blueBlocker, redBlocker, projBlocker, worldBlocker , greyBlocker;
+    public GameObject discardZone, handZone, worldTellPlayer;
 
     void Awake()
     {
@@ -104,14 +109,13 @@ public class Score : MonoBehaviour
         worldBlocker.SetActive(determineWorldNum == 1 || determineWorldNum == 2 || determineWorldNum == 3 ||
             determineWorldNum == 4 || determineWorldNum == 5 || determineWorldNum == 6 || determineWorldNum == 7 ||
             determineWorldNum == 8 || determineWorldNum == 9 || determineWorldNum == 10);
-        greyBlocker.SetActive(greyCountFromDnD >= 3);
-        
+        greyBlocker.SetActive(greyCountFromDnD >= 3);       
     }
 
     //move the contents of update to activate somewhere else
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(InputManager.IM.PlayCode))
         {
             currentChild = this.gameObject.transform.GetChild(0);
             if (currentChild.gameObject.tag == "greyCard")
@@ -153,6 +157,15 @@ public class Score : MonoBehaviour
         {
             Score.greyCountFromDnD = 0;
             greyBlocker.SetActive(false);
+        }
+
+        if (worldBlocker.activeSelf == false)
+        {
+            IfWorldActive();
+        }
+        else if (worldBlocker.activeSelf == true)
+        {
+            RestoreHandAndDiscard();
         }
     }
 
@@ -228,6 +241,33 @@ public class Score : MonoBehaviour
     {
         currentIndex = currentChild.GetComponent<CardProperties>().cardIndex;
         Debug.Log("the card is in the card index, " + currentIndex);
+    }
+
+    public void IfWorldActive()
+    {
+        while (worldBlocker.activeSelf == false)
+        {            
+            greyBlocker.SetActive(true);
+            handZone.SetActive(false);
+            discardZone.SetActive(false);
+            worldTellPlayer.SetActive(true);
+            Debug.Log("Score's IfWorldActive working");
+        }
+    }
+
+    public void RestoreHandAndDiscard()
+    {
+        handZone.SetActive(true);
+        discardZone.SetActive(true);
+        worldTellPlayer.SetActive(false);
+    }
+
+    public void DetermineActivation()
+    {
+        blueBlocker.SetActive(DropZone.discardNum <= 1);
+        redBlocker.SetActive(DropZone.discardNum <= 2);
+        projBlocker.SetActive(DropZone.discardNum <= 4);
+        greyBlocker.SetActive(Score.greyCountFromDnD >= 3 && worldBlocker.activeSelf == true);
     }
 
     //still need to specify that these values are received from the card placed in the play area

@@ -9,7 +9,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
     public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.NONE;
     public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker, worldBlocker;
     public static int discardNum = 0;
-    
     //public Text discardCount;
 
     public void OnDrop(PointerEventData eventData)
@@ -34,7 +33,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
                     foreach (Transform child in transform)
                     {
                         Destroy(child.gameObject);
-                        //child.gameObject.SetActive(false);
                     }                                                          
                 }
                 
@@ -49,8 +47,31 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        greyBlocker.SetActive(Score.greyCountFromDnD >= 3);
+        greyBlocker.SetActive(Score.greyCountFromDnD >= 3 && worldBlocker.activeSelf == true);
     }
+
+    /*
+    public void IfWorldActive()
+    {
+        while (worldBlocker.activeSelf == false)
+        {
+            greyBlocker.SetActive(true);
+            blueBlocker.SetActive(true);
+            redBlocker.SetActive(true);
+            projBlocker.SetActive(true);
+            handZone.SetActive(false);
+            discardZone.SetActive(false);
+            worldTellPlayer.SetActive(true);
+        }
+    }
+
+    public void RestoreHandAndDiscard()
+    {
+        handZone.SetActive(true);
+        discardZone.SetActive(true);
+        worldTellPlayer.SetActive(false);
+    }
+    */
 
     //for OnPointerEnter and/or OnPointExit might be a place to add the animations to trigger or 
     //play a sound or apply the stats of a card or another thing

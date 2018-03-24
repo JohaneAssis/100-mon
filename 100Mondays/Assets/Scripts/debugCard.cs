@@ -39,7 +39,7 @@ public class DebugCard : MonoBehaviour
     }
     void OnGUI()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(InputManager.IM.FlipCode))
         {
             DragAndDrop checkSlot = card.GetComponent<DragAndDrop>();
             if (checkSlot.typeOfItem == DragAndDrop.Slot.HAND)

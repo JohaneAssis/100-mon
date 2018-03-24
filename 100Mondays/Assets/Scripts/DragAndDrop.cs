@@ -125,7 +125,20 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        greyBlocker.SetActive(Score.greyCountFromDnD >= 3);
+        if (GetComponent<Score>().GetComponent<Score>().determineWorldNum == 1 || GetComponent<Score>().determineWorldNum == 2 ||
+            GetComponent<Score>().determineWorldNum == 3 || GetComponent<Score>().determineWorldNum == 4 ||
+            GetComponent<Score>().determineWorldNum == 5 || GetComponent<Score>().determineWorldNum == 6 ||
+            GetComponent<Score>().determineWorldNum == 7 || GetComponent<Score>().determineWorldNum == 8 ||
+            GetComponent<Score>().determineWorldNum == 9 || GetComponent<Score>().determineWorldNum == 10)
+        {
+            Debug.Log("this works");
+            greyBlocker.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("this is working itstead");
+            greyBlocker.SetActive(Score.greyCountFromDnD >= 3);
+        }
         
 
         if (typeOfItem == Slot.GREY
@@ -158,7 +171,6 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     
     public void SetDiscardCountTextDnD()
     {
-        Debug.Log("displaying discard score");
         discardCountDnD.text = DropZone.discardNum.ToString();
     }
     
