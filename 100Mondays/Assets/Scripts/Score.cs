@@ -54,6 +54,7 @@ public class Score : MonoBehaviour
     public InputField playerInput, numOfWeeks;
     public Text endScreenOfWeeksW, endScreenOfProfitW, endScreenOfTargetProfitW;
     public Text endScreenOfWeeksL, endScreenOfProfitL, endScreenOfTargetProfitL;
+    bool findTrueOrFalse;
 
     void Awake()
     {
@@ -111,9 +112,11 @@ public class Score : MonoBehaviour
         weekNum += 1;
         weekText.text = weekNum.ToString();
         determineWorldNum = weekNum % worldBlockNum;
-        worldBlocker.SetActive(determineWorldNum == 1 || determineWorldNum == 2 || determineWorldNum == 3 ||
+        /*
+            worldBlocker.SetActive(determineWorldNum == 1 || determineWorldNum == 2 || determineWorldNum == 3 ||
             determineWorldNum == 4 || determineWorldNum == 5 || determineWorldNum == 6 || determineWorldNum == 7 ||
             determineWorldNum == 8 || determineWorldNum == 9 || determineWorldNum == 10);
+        */
         greyBlocker.SetActive(greyCountFromDnD >= 3);       
     }
 
