@@ -35,7 +35,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (typeOfItem == Slot.GREY) //can only draw at max, 3 per turn
         {
             Score.greyCountFromDnD += 1;
-            Debug.Log("greyCountFromDnD "+ Score.greyCountFromDnD);
+            //Debug.Log("greyCountFromDnD "+ Score.greyCountFromDnD);
             CopyIt();            
             //Debug.Log("DragAndDrop's discardNum " + DropZone.discardNum);
         }

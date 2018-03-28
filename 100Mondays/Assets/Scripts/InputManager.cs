@@ -26,14 +26,4 @@ public class InputManager : MonoBehaviour
         PlayCode = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("playKey", "G"));
 
     }
-
-    void Start ()
-    {
-		
-	}
-
-	void Update ()
-    {
-		
-	}
 }

@@ -33,6 +33,7 @@ public class Score : MonoBehaviour
     public float tempProfit = 0f;
     public float mainProfit = 0f;
     float ran1, ran2, ran3, ran4, ran5;
+    public float winNum;
     public Text workerText, prodText, techText, hapText, projText, costText, tempText, mainText;
     int currentIndex;
 
@@ -45,11 +46,14 @@ public class Score : MonoBehaviour
 
     public int weekNum = 0;
     public Text weekText;
-    public int determineWorldNum;
+    public int determineWorldNum, endGameNum;
     int worldBlockNum = 9;
     public static int greyCountFromDnD;
     public GameObject blueBlocker, redBlocker, projBlocker, worldBlocker , greyBlocker;
-    public GameObject discardZone, handZone, worldTellPlayer;
+    public GameObject discardZone, handZone, worldTellPlayer, winScreen, loseScreen;
+    public InputField playerInput, numOfWeeks;
+    public Text endScreenOfWeeksW, endScreenOfProfitW, endScreenOfTargetProfitW;
+    public Text endScreenOfWeeksL, endScreenOfProfitL, endScreenOfTargetProfitL;
 
     void Awake()
     {
@@ -76,6 +80,7 @@ public class Score : MonoBehaviour
         cost = 2f;
 
         weekText.text = weekNum.ToString();
+
         /*
         workerText.text = defaultFace.worker.ToString();
         prodText.text = defaultFace.prod.ToString();
@@ -143,6 +148,7 @@ public class Score : MonoBehaviour
                 GetWorldValues();
                 DeleteUnitAndSetGreyBlocker();
             }
+            DetermineWin();
         }
     }
 
@@ -185,8 +191,8 @@ public class Score : MonoBehaviour
         hapText.text = hap.ToString();
         projText.text = proj.ToString();
         costText.text = cost.ToString();
-        tempText.text = tempProfit.ToString();
-        mainText.text = mainProfit.ToString();
+        tempText.text = tempProfit.ToString("F");
+        mainText.text = mainProfit.ToString("F");
 
         weekText.text = weekNum.ToString();
 
@@ -240,7 +246,7 @@ public class Score : MonoBehaviour
     public void GetCurrentIndex()
     {
         currentIndex = currentChild.GetComponent<CardProperties>().cardIndex;
-        Debug.Log("the card is in the card index, " + currentIndex);
+        //Debug.Log("the card is in the card index, " + currentIndex);
     }
 
     public void IfWorldActive()
@@ -262,6 +268,7 @@ public class Score : MonoBehaviour
         worldTellPlayer.SetActive(false);
     }
 
+    /*
     public void DetermineActivation()
     {
         blueBlocker.SetActive(DropZone.discardNum <= 1);
@@ -269,9 +276,59 @@ public class Score : MonoBehaviour
         projBlocker.SetActive(DropZone.discardNum <= 4);
         greyBlocker.SetActive(Score.greyCountFromDnD >= 3 && worldBlocker.activeSelf == true);
     }
+    */
 
-    //still need to specify that these values are received from the card placed in the play area
-    //also need to destroy the card after the card is placed in the play area
+    public void GetNum()
+    {       
+        if (numOfWeeks != null)
+        {
+            endGameNum = int.Parse(numOfWeeks.text);
+        }
+        else
+        {
+            endGameNum = 101;
+        }
+
+        if (playerInput != null)
+        {
+            winNum = float.Parse(playerInput.text);
+        }
+        else
+        {
+            winNum = 0.0f;
+        }
+        Debug.Log("NumOfWeeks is " + numOfWeeks + ". The winNum is " + winNum + ".");
+    }
+
+    public void DetermineWin()
+    {
+        GetNum();
+        if(weekNum == endGameNum && winNum < mainProfit)
+        {
+            winScreen.SetActive(true);
+            loseScreen.SetActive(false);
+            Debug.Log("DetermineWin case 1");
+            endScreenOfWeeksW.text = endGameNum.ToString();
+            endScreenOfProfitW.text = mainProfit.ToString("F");
+            endScreenOfTargetProfitW.text = winNum.ToString();
+        }
+        else if (weekNum == endGameNum && winNum > mainProfit)
+        {
+            winScreen.SetActive(false);
+            loseScreen.SetActive(true);
+            Debug.Log("DetermineWin case 2");
+            endScreenOfWeeksL.text = endGameNum.ToString();
+            endScreenOfProfitL.text = mainProfit.ToString("F");
+            endScreenOfTargetProfitL.text = winNum.ToString();
+        }
+        else
+        {
+            winScreen.SetActive(false);
+            loseScreen.SetActive(false);
+            Debug.Log("DetermineWin case 3");
+        }
+        Debug.Log("DetermineWin working");
+    }
 
     public void GetGreyValues()
     {
