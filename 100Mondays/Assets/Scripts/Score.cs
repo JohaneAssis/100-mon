@@ -24,14 +24,14 @@ public struct CardFace
 public class Score : MonoBehaviour
 {
     //private CardProperties face;
-    public float worker = 2f;
-    public float prod = 1f;
-    public float tech = 1f;
-    public float hap = 2f;
-    public float proj = 0f;
-    public float cost = 2f;
-    public float tempProfit = 0f;
-    public float mainProfit = 0f;
+    float worker = 2f;
+    float prod = 1f;
+    float tech = 1f;
+    float hap = 2f;
+    float proj = 0f;
+    float cost = 2f;
+    float tempProfit = 0f;
+    float mainProfit = 0f;
     float ran1, ran2, ran3, ran4, ran5;
     public float winNum;
     public Text workerText, prodText, techText, hapText, projText, costText, tempText, mainText;
@@ -332,7 +332,9 @@ public class Score : MonoBehaviour
         }
         Debug.Log("DetermineWin working");
     }
-
+    
+    /// /////////////////////////////////////////////////////////////////////////////////
+    
     public void GetGreyValues()
     {
         //element 0 - 23 grey for struct
