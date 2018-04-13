@@ -6,12 +6,9 @@ using UnityEngine.UI;
 //[ExecuteInEditMode]
 public class CardFlip : MonoBehaviour
 {
-    
-    //basically flipping the card to a random face 
     SpriteRenderer spriteRenderer;
     CardProperties prop;
     public Sprite endImage;
-    //Image image;
 
     public AnimationCurve scaleCurve;
     public float dur = 0.5f;

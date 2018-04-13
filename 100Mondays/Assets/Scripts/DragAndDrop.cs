@@ -19,7 +19,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public DropZone dropZone;
     public GameObject cardPrefab;
     public Text discardCountDnD;
-    public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker, worldBlocker;
+    public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker;
+    public AudioClip pickUpSound1, pickUpSound2, dropSound1, dropSound2;
 
     public void Start()
     {
@@ -32,7 +33,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         DebugCard.Instance.SetCard(gameObject);
         //Debug.Log("OnBeginDrag");
         
-        if (typeOfItem == Slot.GREY) //can only draw at max, 3 per turn
+        if (typeOfItem == Slot.GREY)
         {
             Score.greyCountFromDnD += 1;
             //Debug.Log("greyCountFromDnD "+ Score.greyCountFromDnD);
@@ -81,9 +82,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         GetComponent<CanvasGroup>().blocksRaycasts = false;
 
-        // might loop through each of the zones while beinging to Drag to make a glow 
-        //that will show where the card are valid to play
         //DropZone[] zones = GameObject.FindObjectsOfType<DropZone>();
+        SoundManager.instance.RandomizeSound(pickUpSound1, pickUpSound2);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -111,6 +111,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public void OnEndDrag(PointerEventData eventData)
     {
         //Debug.Log("OnEndDrag");
+        SoundManager.instance.RandomizeSound(dropSound1, dropSound2);
 
         this.transform.SetParent(parentToReturnTo);
         this.transform.SetSiblingIndex(placeholder.transform.GetSiblingIndex());
@@ -125,7 +126,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        if (GetComponent<Score>().GetComponent<Score>().determineWorldNum == 1 || GetComponent<Score>().determineWorldNum == 2 ||
+        if (GetComponent<Score>().determineWorldNum == 1 || GetComponent<Score>().determineWorldNum == 2 ||
             GetComponent<Score>().determineWorldNum == 3 || GetComponent<Score>().determineWorldNum == 4 ||
             GetComponent<Score>().determineWorldNum == 5 || GetComponent<Score>().determineWorldNum == 6 ||
             GetComponent<Score>().determineWorldNum == 7 || GetComponent<Score>().determineWorldNum == 8 ||
@@ -136,8 +137,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
         else
         {
-            Debug.Log("this is working itstead");
-            greyBlocker.SetActive(Score.greyCountFromDnD >= 3);
+            Debug.Log("this is working instead");
+            greyBlocker.SetActive(Score.greyCountFromDnD >= 3 /*&& GetComponent<Score>().worldBlocker.activeSelf == true*/);
         }
         
 
@@ -158,6 +159,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             Destroy(cardPrefab);
             //Debug.Log("discarded card");
         }
+
+        
     }
 
     public void CopyIt()

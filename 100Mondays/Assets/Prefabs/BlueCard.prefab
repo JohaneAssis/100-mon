@@ -169,8 +169,17 @@ MonoBehaviour:
   placeholder: {fileID: 0}
   copyCard: {fileID: 0}
   typeOfItem: 4
+  dropZone: {fileID: 0}
   cardPrefab: {fileID: 1695154356086948}
-  discardVal: 0
+  discardCountDnD: {fileID: 0}
+  blueBlocker: {fileID: 0}
+  redBlocker: {fileID: 0}
+  greyBlocker: {fileID: 0}
+  projBlocker: {fileID: 0}
+  pickUpSound1: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  pickUpSound2: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  dropSound1: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
+  dropSound2: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
 --- !u!212 &212591974549851148
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -236,7 +245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30.7, y: -42.663}
+  m_AnchoredPosition: {x: 30.25, y: -39.961}
   m_SizeDelta: {x: 40, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &225804959266070602

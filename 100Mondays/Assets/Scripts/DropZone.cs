@@ -7,8 +7,11 @@ using UnityEngine.UI;
 public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPointerEnterHandler
 {
     public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.NONE;
-    public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker, worldBlocker;
+    public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker;
     public static int discardNum = 0;
+
+    public AudioClip discardSound1;
+    public AudioClip discardSound2;
     //public Text discardCount;
 
     public void OnDrop(PointerEventData eventData)
@@ -33,7 +36,8 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
                     foreach (Transform child in transform)
                     {
                         Destroy(child.gameObject);
-                    }                                                          
+                    }
+                    SoundManager.instance.RandomizeSound(discardSound1, discardSound2);
                 }
                 
             }
@@ -47,7 +51,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        greyBlocker.SetActive(Score.greyCountFromDnD >= 3 && worldBlocker.activeSelf == true);
+        greyBlocker.SetActive(Score.greyCountFromDnD >= 3 /*&& GetComponent<Score>().worldBlocker.activeSelf == true*/);
     }
 
     /*

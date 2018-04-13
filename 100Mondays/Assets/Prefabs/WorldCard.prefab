@@ -159,13 +159,17 @@ MonoBehaviour:
   placeholder: {fileID: 0}
   copyCard: {fileID: 0}
   typeOfItem: 6
-  cardPrefab: {fileID: 1708414920574332}
-  blueDeck: {fileID: 0}
-  redDeck: {fileID: 0}
-  greyDeck: {fileID: 0}
-  projDeck: {fileID: 0}
-  worldDeck: {fileID: 0}
   dropZone: {fileID: 0}
+  cardPrefab: {fileID: 1708414920574332}
+  discardCountDnD: {fileID: 0}
+  blueBlocker: {fileID: 0}
+  redBlocker: {fileID: 0}
+  greyBlocker: {fileID: 0}
+  projBlocker: {fileID: 0}
+  pickUpSound1: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  pickUpSound2: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  dropSound1: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
+  dropSound2: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
 --- !u!212 &212424354559394792
 SpriteRenderer:
   m_ObjectHideFlags: 1

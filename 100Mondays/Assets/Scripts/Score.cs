@@ -42,12 +42,11 @@ public class Score : MonoBehaviour
 
     public List<CardFace> listOfFaces;
 
-    //CardFace defaultFace = new CardFace();
-
     public int weekNum = 0;
     public Text weekText;
-    public int determineWorldNum, endGameNum;
-    int worldBlockNum = 9;
+    public float determineWorldNum; 
+    public int endGameNum;
+    int worldBlockNum = 3;
     public static int greyCountFromDnD;
     public GameObject blueBlocker, redBlocker, projBlocker, worldBlocker , greyBlocker;
     public GameObject discardZone, handZone, worldTellPlayer, winScreen, loseScreen;
@@ -55,6 +54,9 @@ public class Score : MonoBehaviour
     public Text endScreenOfWeeksW, endScreenOfProfitW, endScreenOfTargetProfitW;
     public Text endScreenOfWeeksL, endScreenOfProfitL, endScreenOfTargetProfitL;
     bool findTrueOrFalse;
+
+    public AudioClip playSound1;
+    public AudioClip playSound2;
 
     void Awake()
     {
@@ -81,43 +83,6 @@ public class Score : MonoBehaviour
         cost = 2f;
 
         weekText.text = weekNum.ToString();
-
-        /*
-        workerText.text = defaultFace.worker.ToString();
-        prodText.text = defaultFace.prod.ToString();
-        techText.text = defaultFace.tech.ToString();
-        hapText.text = defaultFace.tech.ToString();
-        projText.text = defaultFace.proj.ToString();
-        costText.text = defaultFace.cost.ToString();
-        tempText.text = tempProfit.ToString();
-        mainText.text = mainProfit.ToString();
-        ran1 = Random.Range(0.8f, 1.5f);
-        ran2 = Random.Range(0.8f, 1.5f);
-        ran3 = Random.Range(0.8f, 1.5f);
-        ran4 = Random.Range(0.8f, 1.5f);
-        ran5 = Random.Range(0.8f, 1.5f);
-        face = GetComponent<CardProperties>();
-
-        defaultFace.worker = 2f;
-        defaultFace.prod = 1f;
-        defaultFace.tech = 1f;
-        defaultFace.hap = 2f;
-        defaultFace.proj = 0f;
-        defaultFace.cost = 2f;
-        */
-    }
-
-    public void DetermineWeekBlockers()
-    {
-        weekNum += 1;
-        weekText.text = weekNum.ToString();
-        determineWorldNum = weekNum % worldBlockNum;
-        /*
-            worldBlocker.SetActive(determineWorldNum == 1 || determineWorldNum == 2 || determineWorldNum == 3 ||
-            determineWorldNum == 4 || determineWorldNum == 5 || determineWorldNum == 6 || determineWorldNum == 7 ||
-            determineWorldNum == 8 || determineWorldNum == 9 || determineWorldNum == 10);
-        */
-        greyBlocker.SetActive(greyCountFromDnD >= 3);       
     }
 
     //move the contents of update to activate somewhere else
@@ -155,16 +120,28 @@ public class Score : MonoBehaviour
         }
     }
 
+    public void DetermineWeekNum()
+    {
+        Debug.Log("DetermineWeekNum() working");
+        weekNum += 1;
+        weekText.text = weekNum.ToString();
+        determineWorldNum = weekNum / worldBlockNum;
+
+        Debug.Log(!Mathf.Approximately(determineWorldNum, Mathf.RoundToInt(determineWorldNum)));
+        //worldBlocker.SetActive(!Mathf.Approximately(determineWorldNum, Mathf.RoundToInt(determineWorldNum)));
+        SoundManager.instance.RandomizeSound(playSound1, playSound2);
+    }
+
     public void DeleteUnitAndSetGreyBlocker()
     {
         foreach (Transform child in transform)
         {
             Destroy(child.gameObject, 1);
         }
-        DetermineWeekBlockers();
+        DetermineWeekNum();
         if (greyBlocker.activeSelf)
         {
-            Score.greyCountFromDnD = 0;
+            greyCountFromDnD = 0;
             greyBlocker.SetActive(false);
         }
 
@@ -186,7 +163,6 @@ public class Score : MonoBehaviour
             + 3f * proj * prod * tech * ran3
             - 2f * cost * tech * ran4
             - worker * cost * ran5;
-        //might need to change the location of where mainProfit is calculated so it doesn't keep incrementing
         mainProfit += tempProfit;
         workerText.text = worker.ToString();
         prodText.text = prod.ToString();
@@ -198,6 +174,8 @@ public class Score : MonoBehaviour
         mainText.text = mainProfit.ToString("F");
 
         weekText.text = weekNum.ToString();
+
+        greyCountFromDnD = 0;
 
         /*
         Debug.Log("GetCombinedValues() working");
@@ -236,14 +214,6 @@ public class Score : MonoBehaviour
         mainProfit = 0f;
         GetCombinedValues();
         weekNum = 0;
-        /*
-        defaultFace.worker = 2f;
-        defaultFace.prod = 1f;
-        defaultFace.tech = 1f;
-        defaultFace.hap = 2f;
-        defaultFace.proj = 0f;
-        defaultFace.cost = 2f;
-        */
     }
 
     public void GetCurrentIndex()
@@ -254,32 +224,34 @@ public class Score : MonoBehaviour
 
     public void IfWorldActive()
     {
+        
         while (worldBlocker.activeSelf == false)
         {            
             greyBlocker.SetActive(true);
             handZone.SetActive(false);
             discardZone.SetActive(false);
             worldTellPlayer.SetActive(true);
-            Debug.Log("Score's IfWorldActive working");
+            //Debug.Log("Score's IfWorldActive working");
         }
     }
 
     public void RestoreHandAndDiscard()
     {
+        Debug.Log("RestoreHandAndDiscard() working");
         handZone.SetActive(true);
         discardZone.SetActive(true);
         worldTellPlayer.SetActive(false);
     }
 
-    /*
+    
     public void DetermineActivation()
     {
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        greyBlocker.SetActive(Score.greyCountFromDnD >= 3 && worldBlocker.activeSelf == true);
+        greyBlocker.SetActive(greyCountFromDnD >= 3 /*&& worldBlocker.activeSelf == true*/);
     }
-    */
+    
 
     public void GetNum()
     {       

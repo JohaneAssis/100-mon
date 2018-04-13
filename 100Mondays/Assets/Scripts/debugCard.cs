@@ -18,6 +18,9 @@ public class DebugCard : MonoBehaviour
     PointerEventData eventData;
 
     public GameObject card;
+    public GameObject handZone;
+    public AudioClip flipNoise1;
+    public AudioClip flipNoise2;
 
     private void Start()
     {
@@ -50,7 +53,7 @@ public class DebugCard : MonoBehaviour
 
             if (checkZone == true)
             {
-                if (count <= 1)
+                if (count <= 1 /*&& card.transform.parent == handZone*/)
                 {
                     if (cardIndex >= cardProp.faces.Length)
                     {
@@ -68,6 +71,7 @@ public class DebugCard : MonoBehaviour
                             flip.FlipCard(cardProp.cardBack, cardProp.faces[cardIndex], cardIndex);
                         }
                         cardIndex++;
+                        SoundManager.instance.RandomizeSound(flipNoise1, flipNoise2);
                     }
                 }
             }
