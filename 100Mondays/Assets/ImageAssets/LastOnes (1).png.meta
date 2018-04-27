@@ -1,0 +1,942 @@
+fileFormatVersion: 2
+guid: c3f15094144664c4087f568308240185
+timeCreated: 1524589722
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LastOnes (1)_0
+    21300002: LastOnes (1)_1
+    21300004: LastOnes (1)_2
+    21300006: LastOnes (1)_3
+    21300008: LastOnes (1)_4
+    21300010: LastOnes (1)_5
+    21300012: LastOnes (1)_6
+    21300014: LastOnes (1)_7
+    21300016: LastOnes (1)_8
+    21300018: LastOnes (1)_9
+    21300020: LastOnes (1)_10
+    21300022: LastOnes (1)_11
+    21300024: LastOnes (1)_12
+    21300026: LastOnes (1)_13
+    21300028: LastOnes (1)_14
+    21300030: LastOnes (1)_15
+    21300032: LastOnes (1)_16
+    21300034: LastOnes (1)_17
+    21300036: LastOnes (1)_18
+    21300038: LastOnes (1)_19
+    21300040: LastOnes (1)_20
+    21300042: LastOnes (1)_21
+    21300044: LastOnes (1)_22
+    21300046: LastOnes (1)_23
+    21300048: LastOnes (1)_24
+    21300050: LastOnes (1)_25
+    21300052: LastOnes (1)_26
+    21300054: LastOnes (1)_27
+    21300056: LastOnes (1)_28
+    21300058: LastOnes (1)_29
+    21300060: LastOnes (1)_30
+    21300062: LastOnes (1)_31
+    21300064: LastOnes (1)_32
+    21300066: LastOnes (1)_33
+    21300068: LastOnes (1)_34
+    21300070: LastOnes (1)_35
+    21300072: LastOnes (1)_36
+    21300074: LastOnes (1)_37
+    21300076: LastOnes (1)_38
+    21300078: LastOnes (1)_39
+    21300080: LastOnes (1)_40
+    21300082: LastOnes (1)_41
+    21300084: LastOnes (1)_42
+    21300086: LastOnes (1)_43
+    21300088: LastOnes (1)_44
+    21300090: LastOnes (1)_45
+    21300092: LastOnes (1)_46
+    21300094: LastOnes (1)_47
+    21300096: LastOnes (1)_48
+    21300098: LastOnes (1)_49
+    21300100: LastOnes (1)_50
+    21300102: LastOnes (1)_51
+    21300104: LastOnes (1)_52
+    21300106: LastOnes (1)_53
+    21300108: LastOnes (1)_54
+    21300110: LastOnes (1)_55
+    21300112: LastOnes (1)_56
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LastOnes (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 506
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_1
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 828
+        width: 101
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_2
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 865
+        width: 479
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1208
+        width: 324
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 869
+        width: 481
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1303
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_6
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1296
+        width: 196
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_7
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 1288
+        width: 197
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_8
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 1383
+        width: 252
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_9
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 1385
+        width: 254
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_10
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1385
+        width: 251
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 869
+        width: 220
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_12
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 1165
+        width: 177
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_13
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 1275
+        width: 252
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_14
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1277
+        width: 252
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_15
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1277
+        width: 256
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_16
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1155
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_17
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 1167
+        width: 252
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1169
+        width: 252
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_19
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1169
+        width: 251
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_20
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1134
+        width: 394
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_21
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1055
+        width: 251
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_22
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 955
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: 0.4999889, y: 0.5934409}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_23
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 946
+        width: 316
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_24
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1055
+        width: 255
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_25
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1055
+        width: 251
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_26
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 939
+        width: 252
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_27
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 941
+        width: 251
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_28
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 941
+        width: 251
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 780
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_30
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 792
+        width: 116
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_31
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 763
+        width: 317
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_32
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 800
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_33
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 800
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_34
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 796
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_35
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 761
+        width: 181
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_36
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 758
+        width: 179
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 156
+        width: 704
+        height: 627
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_38
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 537
+        width: 812
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_39
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 586
+        width: 194
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_40
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 588
+        width: 196
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_41
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 579
+        width: 197
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_42
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 696
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_43
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 698
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_44
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 698
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_45
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 696
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_46
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 272
+        width: 813
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 350
+        width: 197
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_48
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 347
+        width: 193
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_49
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 334
+        width: 197
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_50
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 58
+        width: 479
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_51
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 56
+        width: 481
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_52
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 19
+        width: 820
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_53
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 113
+        width: 193
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_54
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 111
+        width: 192
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_55
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 98
+        width: 197
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LastOnes (1)_56
+      rect:
+        serializedVersion: 2
+        x: 3978
+        y: 0
+        width: 194
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
