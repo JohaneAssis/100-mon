@@ -7,9 +7,6 @@ using UnityEngine.UI;
 //element 0 - 23 grey, element 24 - 45 blue, element 46 - 69 red
 //element 70 - 81 world, element 82 - 90 proj
 
-//didn't end up using this struct but kept it in just in case for future possible implementation,
-//commented out some parts for the struct implementation as well,
-//and kept it because I already put the 91 card with stats in the inspector set up
 public struct CardFace
 {
     public Sprite sprite;
@@ -43,12 +40,13 @@ public class Score : MonoBehaviour
     public List<CardFace> listOfFaces;
 
     public int weekNum = 0;
+    public int determineNum = 1;
     public Text weekText;
     public float determineWorldNum; 
     public int endGameNum;
     int worldBlockNum = 3;
     public static int greyCountFromDnD;
-    public GameObject blueBlocker, redBlocker, projBlocker, worldBlocker , greyBlocker;
+    public GameObject blueBlocker, redBlocker, projBlocker, worldBlocker , greyBlocker, allBlocker;
     public GameObject discardZone, handZone, worldTellPlayer, winScreen, loseScreen;
     public InputField playerInput, numOfWeeks;
     public Text endScreenOfWeeksW, endScreenOfProfitW, endScreenOfTargetProfitW;
@@ -122,12 +120,13 @@ public class Score : MonoBehaviour
 
     public void DetermineWeekNum()
     {
-        Debug.Log("DetermineWeekNum() working");
+        //Debug.Log("DetermineWeekNum() working");
         weekNum += 1;
+        determineNum += 1;
         weekText.text = weekNum.ToString();
         determineWorldNum = weekNum / worldBlockNum;
 
-        Debug.Log(!Mathf.Approximately(determineWorldNum, Mathf.RoundToInt(determineWorldNum)));
+        //Debug.Log(!Mathf.Approximately(determineWorldNum, Mathf.RoundToInt(determineWorldNum)));
         //worldBlocker.SetActive(!Mathf.Approximately(determineWorldNum, Mathf.RoundToInt(determineWorldNum)));
         SoundManager.instance.RandomizeSound(playSound1, playSound2);
     }
@@ -144,15 +143,12 @@ public class Score : MonoBehaviour
             greyCountFromDnD = 0;
             greyBlocker.SetActive(false);
         }
-
-        if (worldBlocker.activeSelf == false)
-        {
-            IfWorldActive();
-        }
-        else if (worldBlocker.activeSelf == true)
+        /*
+        if (worldBlocker.activeSelf == true)
         {
             RestoreHandAndDiscard();
         }
+        */
     }
 
     public void GetCombinedValues()
@@ -176,25 +172,6 @@ public class Score : MonoBehaviour
         weekText.text = weekNum.ToString();
 
         greyCountFromDnD = 0;
-
-        /*
-        Debug.Log("GetCombinedValues() working");
-        tempProfit = defaultFace.worker * defaultFace.prod * defaultFace.tech * ran1
-            + defaultFace.worker * defaultFace.hap * ran2
-            + defaultFace.proj * defaultFace.prod * defaultFace.tech * ran3
-            - 5f * defaultFace.cost * defaultFace.tech * ran4
-            - defaultFace.worker * defaultFace.cost * ran5;
-        //might need to change the location of where mainProfit is calculated so it doesn't keep incrementing
-        //mainProfit += tempProfit;
-        workerText.text = defaultFace.worker.ToString();
-        prodText.text = defaultFace.prod.ToString();
-        techText.text = defaultFace.tech.ToString();
-        hapText.text = defaultFace.hap.ToString();
-        projText.text = defaultFace.proj.ToString();
-        costText.text = defaultFace.cost.ToString();
-        tempText.text = tempProfit.ToString();
-        mainText.text = mainProfit.ToString();
-        */
     }
 
     public void ResetScore()
@@ -222,36 +199,23 @@ public class Score : MonoBehaviour
         //Debug.Log("the card is in the card index, " + currentIndex);
     }
 
-    public void IfWorldActive()
-    {
-        
-        while (worldBlocker.activeSelf == false)
-        {            
-            greyBlocker.SetActive(true);
-            handZone.SetActive(false);
-            discardZone.SetActive(false);
-            worldTellPlayer.SetActive(true);
-            //Debug.Log("Score's IfWorldActive working");
-        }
-    }
-
+    /*
     public void RestoreHandAndDiscard()
     {
-        Debug.Log("RestoreHandAndDiscard() working");
+        //Debug.Log("RestoreHandAndDiscard() working");
         handZone.SetActive(true);
         discardZone.SetActive(true);
         worldTellPlayer.SetActive(false);
     }
-
-    
+    */
+    /*
     public void DetermineActivation()
     {
         blueBlocker.SetActive(DropZone.discardNum <= 1);
         redBlocker.SetActive(DropZone.discardNum <= 2);
         projBlocker.SetActive(DropZone.discardNum <= 4);
-        greyBlocker.SetActive(greyCountFromDnD >= 3 /*&& worldBlocker.activeSelf == true*/);
-    }
-    
+        greyBlocker.SetActive(greyCountFromDnD >= 3 /*&& worldBlocker.activeSelf == true);
+    }*/
 
     public void GetNum()
     {       
@@ -310,7 +274,7 @@ public class Score : MonoBehaviour
     public void GetGreyValues()
     {
         //element 0 - 23 grey for struct
-        Debug.Log("getting grey card values");
+        //Debug.Log("getting grey card values");
         if (typeOfItem == DragAndDrop.Slot.PLAY && GameObject.FindWithTag("greyCard") == true)
         {
             //for the child of the current object that the script is attached to 
@@ -515,7 +479,7 @@ public class Score : MonoBehaviour
     public void GetBlueValues()
     {
         //element 24 - 45 blue for struct
-        Debug.Log("getting blue card values");
+        //Debug.Log("getting blue card values");
         if (typeOfItem == DragAndDrop.Slot.PLAY && GameObject.FindWithTag("blueCard") == true)
         {
             GetCurrentIndex();
@@ -679,7 +643,7 @@ public class Score : MonoBehaviour
     public void GetRedValues()
     {
         //element 46 - 69 red for struct
-        Debug.Log("getting red card values");
+        //Debug.Log("getting red card values");
         if (typeOfItem == DragAndDrop.Slot.PLAY && GameObject.FindWithTag("redCard") == true)
         {
             GetCurrentIndex();
@@ -854,7 +818,7 @@ public class Score : MonoBehaviour
     public void GetProjValues()
     {
         //element 82 - 90 proj for struct
-        Debug.Log("getting proj card values");
+        //Debug.Log("getting proj card values");
         if (typeOfItem == DragAndDrop.Slot.PLAY && GameObject.FindWithTag("projCard") == true)
         {
             GetCurrentIndex();
@@ -928,7 +892,7 @@ public class Score : MonoBehaviour
     public void GetWorldValues()
     {
         //element 70 - 81 world for struct
-        Debug.Log("getting world card values");
+        //Debug.Log("getting world card values");
         if (typeOfItem == DragAndDrop.Slot.PLAY && GameObject.FindWithTag("worldCard") == true)
         {
             GetCurrentIndex();

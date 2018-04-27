@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        Efekt();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -48,9 +49,10 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void Update()
+    IEnumerator Efekt()
     {
-        
+        float fadeTime = GameObject.Find("Handler").GetComponent<FadeIn1>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
     }
 
     public void OnGUI()

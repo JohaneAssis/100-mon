@@ -9,6 +9,7 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
     public DragAndDrop.Slot typeOfItem = DragAndDrop.Slot.NONE;
     public GameObject blueBlocker, redBlocker, greyBlocker, projBlocker;
     public static int discardNum = 0;
+    public Score scoreObj;
 
     public AudioClip discardSound1;
     public AudioClip discardSound2;
@@ -48,35 +49,28 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerExitHandler, IPoint
 
     public void DetermineActivation()
     {
-        blueBlocker.SetActive(DropZone.discardNum <= 1);
-        redBlocker.SetActive(DropZone.discardNum <= 2);
-        projBlocker.SetActive(DropZone.discardNum <= 4);
+        blueBlocker.SetActive(discardNum <= 1);
+        redBlocker.SetActive(discardNum <= 2);
+        projBlocker.SetActive(discardNum <= 4);
         greyBlocker.SetActive(Score.greyCountFromDnD >= 3 /*&& GetComponent<Score>().worldBlocker.activeSelf == true*/);
-    }
+        
+        scoreObj.worldBlocker.SetActive(scoreObj.determineNum % 9 != 0);
+        int weekNumMinusOne = scoreObj.weekNum - 1;
 
-    /*
-    public void IfWorldActive()
-    {
-        while (worldBlocker.activeSelf == false)
+        if (!scoreObj.worldBlocker.activeSelf)
         {
-            greyBlocker.SetActive(true);
-            blueBlocker.SetActive(true);
-            redBlocker.SetActive(true);
-            projBlocker.SetActive(true);
-            handZone.SetActive(false);
-            discardZone.SetActive(false);
-            worldTellPlayer.SetActive(true);
+            scoreObj.allBlocker.SetActive(true);
         }
+        else if (scoreObj.weekNum % 9 == 0)
+        {
+            scoreObj.allBlocker.SetActive(false);
+        }
+        
+        Debug.Log(scoreObj.weekNum % 9 == 0);
+        Debug.Log("scoreObj.weekNum is " + scoreObj.weekNum );
     }
 
-    public void RestoreHandAndDiscard()
-    {
-        handZone.SetActive(true);
-        discardZone.SetActive(true);
-        worldTellPlayer.SetActive(false);
-    }
-    */
-
+    
     //for OnPointerEnter and/or OnPointExit might be a place to add the animations to trigger or 
     //play a sound or apply the stats of a card or another thing
     public void OnPointerEnter(PointerEventData eventData)
