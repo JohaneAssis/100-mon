@@ -75,7 +75,19 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   placeholderParent: {fileID: 0}
   placeholder: {fileID: 0}
-  typeOfItem: 0
+  copyCard: {fileID: 0}
+  typeOfItem: 3
+  dropZone: {fileID: 0}
+  cardPrefab: {fileID: 1230049631177020}
+  discardCountDnD: {fileID: 0}
+  blueBlocker: {fileID: 0}
+  redBlocker: {fileID: 0}
+  greyBlocker: {fileID: 0}
+  projBlocker: {fileID: 0}
+  pickUpSound1: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  pickUpSound2: {fileID: 8300000, guid: a6be00f4d5df56b4986c32455ec3f377, type: 3}
+  dropSound1: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
+  dropSound2: {fileID: 8300000, guid: 344c0aca31bc57b42984038fac689301, type: 3}
 --- !u!114 &114499022253581272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +144,7 @@ MonoBehaviour:
   m_PreferredHeight: 65
   m_FlexibleWidth: 0
   m_FlexibleHeight: 0
+  m_LayoutPriority: 1
 --- !u!114 &114721634945593088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54877118c9029a24a8fc813bb61e9783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endImage: {fileID: 0}
   scaleCurve:
     serializedVersion: 2
     m_Curve:
@@ -177,6 +191,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -192,17 +207,25 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9f5d3fec11d07e841bb900a8a07123be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!222 &222042410605857834
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -217,14 +240,14 @@ RectTransform:
   m_GameObject: {fileID: 1230049631177020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1111112, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30.7, y: -42.663}
+  m_AnchoredPosition: {x: 29.350006, y: -43.51144}
   m_SizeDelta: {x: 40, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &225716879517951110

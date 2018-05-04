@@ -204,7 +204,10 @@ PlayerSettings:
   tvOSSmallIconLayers: []
   tvOSSmallIconLayers2x: []
   tvOSLargeIconLayers: []
+<<<<<<< HEAD
   tvOSLargeIconLayers2x: []
+=======
+>>>>>>> 23dab383ff7696f21ee5814f0193e5592d69fa92
   tvOSTopShelfImageLayers: []
   tvOSTopShelfImageLayers2x: []
   tvOSTopShelfImageWideLayers: []
